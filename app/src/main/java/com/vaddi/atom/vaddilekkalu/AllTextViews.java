@@ -46,7 +46,7 @@ public class AllTextViews extends AppCompatActivity {
         vaddi.setText("  ="+v+" రూపాయలు");
 
 
-        days.setText("  ="+e1+" రోజులు");
+        days.setText("  ="+e1+" రోజులు"+"ram");
         months.setText("  ="+e2+" నెలలు");
         years.setText("  ="+e3+" సంవత్సరాలు");
         total.setText("  ="+t+" రూపాయలు");
