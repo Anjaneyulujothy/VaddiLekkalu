@@ -42,7 +42,7 @@ public class AllTextViews extends AppCompatActivity {
         int t = (int) e4;
         int v = (int) e6;
 
-        aslu.setText("  ="+e5+" రూపాయలు");
+        aslu.setText("  ="+e5+" రూపాయలు"+"anji");
         vaddi.setText("  ="+v+" రూపాయలు");
 
 
