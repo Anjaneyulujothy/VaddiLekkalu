@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+
+
+    android:layout_height="match_parent"
+    tools:context="com.vaddi.atom.vaddilekkalu.MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <TextView
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:text="ప్రామిసరి నోట్"
+        android:textColor="#0813e6"
+    android:id="@+id/tv_title"
+    android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/ammount"
+            android:layout_width="250dp"
+            android:paddingLeft="7dp"
+            android:background="@drawable/shappppp"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center"
+
+            android:ems="10"
+            android:textColor="#427eac"
+            android:textColorHint="#427eac"
+            android:maxLines="1"
+
+            android:hint="అసలు"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+
+            android:inputType="number"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignLeft="@+id/hundred"
+            android:layout_alignStart="@+id/hundred" />
+
+        <EditText
+            android:id="@+id/hundred"
+            android:layout_width="250dp"
+            android:background="@drawable/shappppp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:paddingLeft="7dp"
+            android:singleLine="true"
+
+            android:imeOptions="actionNext"
+            android:layout_gravity="center"
+            android:textColor="#427eac"
+            android:textColorHint="#427eac"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:hint="వంద రూపాయలకే వడ్డీ"
+            android:layout_below="@+id/ammount"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="తీసుకున్న రోజు"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:textColor="#0813e6"
+            android:layout_marginStart="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:paddingLeft="4dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/shappppp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:ems="10"
+            android:hint="రోజు"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textColor="#427eac"
+            android:textColorHint="#427eac" />
+
+        <EditText
+            android:id="@+id/month2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/year2"
+            android:layout_alignBottom="@+id/year2"
+            android:layout_alignLeft="@+id/month1"
+            android:layout_alignStart="@+id/month1"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:singleLine="true"
+            android:background="@drawable/shappppp"
+            android:imeOptions="actionNext"
+            android:ems="10"
+            android:hint="నెల"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:textColor="#427eac"
+            android:textColorHint="#427eac" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_weight="1"
+        android:id="@+id/day2"
+        android:maxLength="4"
+            android:paddingLeft="4dp"
+            android:background="@drawable/shappppp"
+        android:maxLines="1"
+
+            android:textColor="#427eac"
+        android:hint="సంవత్సరం"
+        android:layout_alignBaseline="@+id/month2"
+        android:layout_alignBottom="@+id/month2"
+        android:layout_alignLeft="@+id/day1"
+        android:textColorHint="#427eac"
+        android:layout_alignStart="@+id/day1" />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:text="చెల్లిస్తున్న రోజు"
+            android:textColor="#0813e6"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/linearLayout">
+
+            <EditText
+                android:id="@+id/year1"
+                android:layout_width="wrap_content"
+
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/month1"
+                android:layout_alignBottom="@+id/month1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shappppp"
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:ems="10"
+                android:hint="రోజు"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:textColor="#427eac"
+                android:textColorHint="#427eac" />
+
+            <EditText
+                android:id="@+id/month1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/textView5"
+                android:layout_marginBottom="22dp"
+
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_weight="1"
+                android:background="@drawable/shappppp"
+                android:paddingLeft="4dp"
+                android:ems="10"
+                android:hint="నెల"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#427eac"
+                android:textColorHint="#427eac" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/day1"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:maxLength="4"
+                android:layout_weight="1"
+                android:background="@drawable/shappppp"
+                android:textColor="#427eac"
+                android:paddingLeft="4dp"
+                android:hint="సంవత్సరం"
+                android:layout_alignBaseline="@+id/month1"
+                android:layout_alignBottom="@+id/month1"
+                android:maxLines="1"
+                android:layout_toRightOf="@+id/bt_calculate"
+                android:textColorHint="#427eac"
+                android:layout_toEndOf="@+id/bt_calculate" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_result"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+
+
+            android:background="#deecf9"
+
+            android:text="లెక్కించండి"
+            android:textColor="#0813e6"/>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_result"
+
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp" />
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
