@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         adView.loadAd(adRequest);
 
         // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
-        Toast.makeText(this, "Enjoy with this app", Toast.LENGTH_LONG).show();
+
 
 
 

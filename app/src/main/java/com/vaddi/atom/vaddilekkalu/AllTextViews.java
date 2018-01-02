@@ -42,11 +42,11 @@ public class AllTextViews extends AppCompatActivity {
         int t = (int) e4;
         int v = (int) e6;
 
-        aslu.setText("  ="+e5+" రూపాయలు"+"anji");
+        aslu.setText("  ="+e5+" రూపాయలు");
         vaddi.setText("  ="+v+" రూపాయలు");
 
 
-        days.setText("  ="+e1+" రోజులు"+"ram");
+        days.setText("  ="+e1+" రోజులు");
         months.setText("  ="+e2+" నెలలు");
         years.setText("  ="+e3+" సంవత్సరాలు");
         total.setText("  ="+t+" రూపాయలు");
@@ -57,7 +57,7 @@ public class AllTextViews extends AppCompatActivity {
         adView.loadAd(adRequest);
 
         // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
-        Toast.makeText(this, "Enjoy with this app", Toast.LENGTH_LONG).show();
+
 
 
 
